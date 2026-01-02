@@ -21,15 +21,13 @@ li{
 }
 
 body{
-  font-family: "Roboto", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 32px;
   color: var(--global-color);
   overflow-x: hidden;
-
-  /* font-family: "Open Sans", serif; */
-  /* font-family: "Yellowtail", serif; */
 }
+
 
 .container{
   max-width: 1440px;
@@ -38,7 +36,6 @@ body{
 }
 .intro{
   color: var(--accent-color);
-  font-family: "Yellowtail", serif;
   font-size: 36px;
   line-height: 65px;
   text-transform: capitalize;
@@ -59,18 +56,30 @@ body{
   border-radius: 16px;
   position: relative;
 }
-.button-link::after{
-  content: url(../images/arrow.png);
+
+.button-link::after {
+  content: "";
   position: absolute;
   right: 7px;
+  width: 20px; 
+  height: 20px; 
+  background-image: url(../images/arrow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
 .button-link:hover{
-  opacity: .9;
+opacity: .8;
 }
+
 .button-link-yellow{
   background-color: #EFD372;
   border: 1px solid var(--accent-color);
   color: var(--primary-color);
+}
+
+.button-link-yellow:hover{
+  background-color: #ecbd13;
 }
 
 .header{
@@ -175,7 +184,6 @@ body{
   margin-bottom: 22px;
 }
 .about__text{
-   font-family: "Open Sans", serif;
    max-width: 655px;
    margin-bottom: 56px;
 }
@@ -241,12 +249,10 @@ body{
 }
 .product__old-price{
   font-size: 17px;
-  font-family: "Open Sans", serif;
   color: #B8B8B8;
   text-decoration: line-through;
 }
 .product__new-price{
-  font-family: "Open Sans", serif;
   font-weight: bold;
 }
 .product__category{
@@ -256,7 +262,6 @@ body{
   display: inline-block;
   padding: 5px 20px;
   background-color: var(--primary-color);
-  font-family: "Open Sans", serif;
   color: #fff;
   font-size: 15px;
   line-height: 27px;
@@ -277,13 +282,13 @@ body{
 .testimonial-title{
   margin-bottom: 60px;
 }
-.teatimonial__customer{
+.testimonial__customer{
   padding-bottom: 95px;
   max-width: 966px;
   border-bottom: 1px solid #E0E0E0;
   margin: 0 auto 100px auto;
 }
-.teatimonial__customer-photo{
+.testimonial__customer-photo{
   display: block;
   margin: 0 auto;
   margin-bottom: 18px;
@@ -291,19 +296,17 @@ body{
 .testimonial__customer-stars{
   margin-bottom: 30px;
 }
-.testimonual__customer-text{
-  font-family: "Open Sans", serif;
+.testimonial__customer-text{
   max-width: 880px;
   margin: 0 auto;
   margin-bottom: 23px;
 }
-.testimonial__custoner-name{
+.testimonial__customer-name{
   font-size: 26px;
   line-height: 33px;
   font-weight: bold;
 }
 .teatimonial__buyer{
-  font-family: "Open Sans", serif;
   font-size: 14px;
   line-height: 27px;
 }
@@ -358,9 +361,7 @@ body{
   font-size: 23px;
   margin-bottom: 4px;
 }
-.eco__item-text{
-  font-family: "Open Sans", serif;
-}
+
 
 .assortment{
   padding-top: 140px;
@@ -444,7 +445,6 @@ body{
   color: var(--primary-color);
 }
 .news__item-text{
-  font-family: "Open Sans", serif;
   max-width: 430px;
   margin-bottom: 12px;
 }
@@ -499,9 +499,6 @@ body{
   font-weight: bold;
 }
 
-.footer{
- 
-}
 .footer__inner{
   padding-top: 130px;
   padding-bottom: 130px;
@@ -523,11 +520,11 @@ body{
   font-weight: bold;
   line-height: 23px;
 }
-.footer__contact-list{
-  font-family: "Open Sans", serif;
-}
 .footer__contact-item{
   margin-bottom: 40px;
+}
+.footer__contact-link:hover{
+  text-decoration: underline;
 }
 .footer__logo{
   margin-bottom: 40px;
@@ -539,7 +536,6 @@ body{
 }
 .footer__social-text{
   max-width: 530px;
-  font-family: "Open Sans", serif;
   margin-bottom: 50px;
   margin-right: 50px;
   margin-left: 50px;
@@ -554,14 +550,15 @@ body{
 }
 .footer__utility-item{
   margin-bottom: 24px;
-  font-family: "Open Sans", serif;
   line-height: 28px;
+}
+.footer__utility-link:hover{
+  text-decoration: underline;
 }
 .footer__bottom{
   border-top: 1px solid #D5D5D5;
   padding: 21px 30px 28px 30px;
   text-align: center;
-  font-family: "Open Sans", serif;
   display: flex;
   justify-content: center;
 }
@@ -686,7 +683,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .testimonual__customer-text{
+  .testimonial__customer-text{
     max-width: 600px;
   }
 
@@ -808,7 +805,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    background-color: var(--accent-color);
+    background-color: #EFD372;
     text-align: center;
     padding-top: 90px;
     padding-bottom: 20px;
@@ -909,7 +906,7 @@ body{
   .testimonial__inner{
     padding-top: 60px;
   }
-  .teatimonial__customer{
+  .testimonial__customer{
     padding-bottom: 50px;
     margin: 0px auto 50px auto;
   }
